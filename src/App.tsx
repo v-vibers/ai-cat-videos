@@ -84,6 +84,11 @@ function App() {
 
   return (
     <div className="app">
+      {import.meta.env.VITE_SUBSCRIBE_DEV_PROJECT_TOKEN && (
+        <div className="env-token-banner">
+          {import.meta.env.VITE_SUBSCRIBE_DEV_PROJECT_TOKEN}
+        </div>
+      )}
       <header className="header">
         <div className="header-content">
           <h1 className="title">
